@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<configuration>
+  <property>
+    <name>dfs.namenode.secondary.http-address</name>
+    <value>0.0.0.0:23090</value>
+    <description>
+      The secondary namenode http server address and port.
+      If the port is 0 then the server will start on a free port.
+    </description>
+  </property>
+  <property>
+    <name>dfs.datanode.address</name>
+    <value>0.0.0.0:23020</value>
+    <description>
+      The address where the datanode server will listen to.
+      If the port is 0 then the server will start on a free port.
+    </description>
+  </property>
+  <property>
+    <name>dfs.datanode.http.address</name>
+    <value>0.0.0.0:23075</value>
+    <description>
+      The datanode http server address and port.
+      If the port is 0 then the server will start on a free port.
+    </description>
+  </property>
+  <property>
+    <name>dfs.datanode.ipc.address</name>
+    <value>0.0.0.0:23023</value>
+    <description>
+      The datanode ipc server address and port.
+      If the port is 0 then the server will start on a free port.
+    </description>
+  </property>
+  <property>
+    <name>dfs.namenode.http-address</name>
+    <value>0.0.0.0:23070</value>
+    <description>
+      The address and the base port where the dfs namenode web ui will listen on.
+      If the port is 0 then the server will start on a free port.
+    </description>
+  </property>
+  <property>
+    <name>dfs.datanode.https.address</name>
+    <value>0.0.0.0:23475</value>
+    <description>The datanode secure http server address and port.
+     If the port is 0 then the server will start on a free port.
+    </description>
+  </property>
+  <property>
+    <name>dfs.namenode.https-address</name>
+    <value>0.0.0.0:23470</value>
+    <description>The namenode secure http server address and port.
+     If the port is 0 then the server will start on a free port.
+    </description>
+  </property>
+  <property>
+    <name>dfs.namenode.backup.address</name>
+    <value>0.0.0.0:23100</value>
+    <description>
+      The backup node server address and port.
+      If the port is 0 then the server will start on a free port.
+    </description>
+  </property>
+  <property>
+    <name>dfs.namenode.backup.http-address</name>
+    <value>0.0.0.0:23105</value>
+    <description>
+      The backup node http server address and port.
+      If the port is 0 then the server will start on a free port.
+    </description>
+  </property>
+  <property>
+    <name>dfs.name.dir</name>
+    <value>/home/kasha/install/pseudo-dist/hdfs/name</value>
+    <description>
+       specify this so that running 'hadoop namenode -format'
+       formats the right dir
+    </description>
+  </property>
+  <property>
+    <name>dfs.data.dir</name>
+    <value>/home/kasha/install/pseudo-dist/hdfs/data </value>
+  </property>
+  <property>
+    <name>dfs.replication</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>dfs.block.size</name>
+    <value>67108864</value>
+  </property>
+</configuration>

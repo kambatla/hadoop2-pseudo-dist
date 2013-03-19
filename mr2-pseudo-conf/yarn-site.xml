@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<configuration>
+<!-- Resource Manager Configs -->
+  <property>
+    <description>The address of the applications manager interface in the RM.</description>
+    <name>yarn.resourcemanager.address</name>
+    <value>localhost:23140</value>
+  </property>
+  <property>
+    <description>The address of the scheduler interface.</description>
+    <name>yarn.resourcemanager.scheduler.address</name>
+    <value>localhost:23130</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.scheduler.class</name>
+    <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler</value>
+  </property>
+  <property>
+    <description>The address of the RM web application.</description>
+    <name>yarn.resourcemanager.webapp.address</name>
+    <value>localhost:23188</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.resource-tracker.address</name>
+    <value>localhost:23125</value>
+  </property>
+  <property>
+    <description>The address of the RM admin interface.</description>
+    <name>yarn.resourcemanager.admin.address</name>
+    <value>localhost:23141</value>
+  </property>
+<!-- Node Manager Configs -->
+  <property>
+    <description>Address where the localizer IPC is.</description>
+    <name>yarn.nodemanager.localizer.address</name>
+    <value>0.0.0.0:23344</value>
+  </property>
+  <property>
+    <description>NM Webapp address.</description>
+    <name>yarn.nodemanager.webapp.address</name>
+    <value>0.0.0.0:23999</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce.shuffle</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
+    <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.local-dirs</name>
+    <value>/home/kasha/install/pseudo-dist/yarn/local</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.log-dirs</name>
+    <value>/home/kasha/install/pseudo-dist/yarn/log</value>
+  </property>
+  <property>
+    <name>mapreduce.shuffle.port</name>
+    <value>23080</value>
+  </property>
+</configuration>

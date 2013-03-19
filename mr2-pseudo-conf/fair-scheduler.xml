@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<allocations>
+  <defaultSchedulingMode>fair</defaultSchedulingMode>
+  <queue name="fifo">
+    <queue name="one">
+      <schedulingMode>fifo</schedulingMode>
+    </queue>
+    <queue name="two"></queue>
+  </queue>
+  <queue name="fair">
+    <queue name="one"></queue>
+    <queue name="two"></queue>
+  </queue>
+</allocations>
