@@ -1,7 +1,7 @@
 #!/bin/sh
 
-VERSION=hadoop-0.23.9
-LOC=/tmp/
+VERSION=hadoop-3.0.0-SNAPSHOT
+LOC=/home/kasha/code/hadoop-trunk/hadoop-dist/target
 
 # delete remnants from previous setup 
 rm -rf /home/kasha/install/pseudo-dist/hdfs/*
@@ -17,6 +17,7 @@ cp scripts/*.sh $VERSION/
 
 # start daemons
 cd $VERSION
+chmod +x *.sh sbin/*.sh
 sh hadoop-dev-setup.sh
 sh hadoop-dev.sh start
 
