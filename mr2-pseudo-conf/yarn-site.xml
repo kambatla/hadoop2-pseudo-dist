@@ -59,11 +59,11 @@
   </property>
   <property>
     <name>yarn.nodemanager.local-dirs</name>
-    <value>/home/kasha/install/pseudo-dist/yarn/local</value>
+    <value>/tmp/pseudo-dist/yarn/local</value>
   </property>
   <property>
     <name>yarn.nodemanager.log-dirs</name>
-    <value>/home/kasha/install/pseudo-dist/yarn/log</value>
+    <value>/tmp/pseudo-dist/yarn/log</value>
   </property>
   <property>
     <name>mapreduce.shuffle.port</name>

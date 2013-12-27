@@ -89,7 +89,7 @@
   </property>
   <property>
     <name>dfs.name.dir</name>
-    <value>/home/kasha/install/pseudo-dist/hdfs/name</value>
+    <value>/tmp/pseudo-dist/hdfs/name</value>
     <description>
        specify this so that running 'hadoop namenode -format'
        formats the right dir
@@ -97,7 +97,7 @@
   </property>
   <property>
     <name>dfs.data.dir</name>
-    <value>/home/kasha/install/pseudo-dist/hdfs/data </value>
+    <value>/tmp/pseudo-dist/hdfs/data </value>
   </property>
   <property>
     <name>dfs.replication</name>
