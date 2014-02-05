@@ -1,10 +1,10 @@
 #!/bin/sh
 
-VERSION=hadoop-3.0.0-SNAPSHOT
-LOC=/home/kasha/archives/
+VERSION=hadoop-2.2.0-cdh5.0.0-beta-2-SNAPSHOT
+LOC=/Users/kasha/archives/
 
 # delete remnants from previous setup 
-rm -rf /home/kasha/install/pseudo-dist/hdfs/*
+rm -rf /tmp/pseudo-dist/hdfs/*
 rm -rf $VERSION*
 
 # cp dist tar ball
