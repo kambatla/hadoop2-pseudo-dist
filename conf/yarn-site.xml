@@ -39,4 +39,8 @@
     <name>yarn.nodemanager.container-monitor.process-tree.class</name>
     <value>org.apache.hadoop.yarn.util.ProcfsBasedProcessTree</value>
   </property>
+  <property>
+      <name>yarn.log-aggregation-enable</name>
+      <value>true</value>
+  </property>
 </configuration>
