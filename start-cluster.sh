@@ -1,7 +1,7 @@
 #!/bin/sh
 
-VERSION=hadoop-2.2.0-cdh5.0.0-beta-2-SNAPSHOT
-LOC=/Users/kasha/archives/
+VERSION=hadoop-3.0.0-SNAPSHOT
+LOC=$HOME/archives/
 
 # delete remnants from previous setup 
 rm -rf /tmp/pseudo-dist/hdfs/*
