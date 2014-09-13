@@ -19,44 +19,10 @@
 <configuration>
 <!-- Resource Manager Configs -->
   <property>
-    <description>The address of the applications manager interface in the RM.</description>
-    <name>yarn.resourcemanager.address</name>
-    <value>localhost:23140</value>
-  </property>
-  <property>
-    <description>The address of the scheduler interface.</description>
-    <name>yarn.resourcemanager.scheduler.address</name>
-    <value>localhost:23130</value>
-  </property>
-  <property>
-    <description>The address of the RM web application.</description>
-    <name>yarn.resourcemanager.webapp.address</name>
-    <value>localhost:23188</value>
-  </property>
-  <property>
-    <name>yarn.resourcemanager.resource-tracker.address</name>
-    <value>localhost:23125</value>
-  </property>
-  <property>
-    <description>The address of the RM admin interface.</description>
-    <name>yarn.resourcemanager.admin.address</name>
-    <value>localhost:23141</value>
-  </property>
-  <property>
     <name>yarn.resourcemanager.scheduler.class</name>
     <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler</value>
   </property>
 <!-- Node Manager Configs -->
-  <property>
-    <description>Address where the localizer IPC is.</description>
-    <name>yarn.nodemanager.localizer.address</name>
-    <value>0.0.0.0:23344</value>
-  </property>
-  <property>
-    <description>NM Webapp address.</description>
-    <name>yarn.nodemanager.webapp.address</name>
-    <value>0.0.0.0:23999</value>
-  </property>
   <property>
     <name>yarn.nodemanager.aux-services</name>
     <value>mapreduce_shuffle</value>
@@ -70,7 +36,7 @@
     <value>/tmp/pseudo-dist/yarn/log</value>
   </property>
   <property>
-    <name>mapreduce.shuffle.port</name>
-    <value>23080</value>
+    <name>yarn.nodemanager.container-monitor.process-tree.class</name>
+    <value>org.apache.hadoop.yarn.util.ProcfsBasedProcessTree</value>
   </property>
 </configuration>
