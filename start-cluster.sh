@@ -23,3 +23,4 @@ sh hadoop-dev.sh start
 
 bin/hadoop fs -mkdir /user
 bin/hadoop fs -mkdir /user/kasha
+bin/hadoop fs -mkdir /tmp
