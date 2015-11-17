@@ -11,6 +11,7 @@ printUsage() {
 
 if [[ -z $INPUT ]]; then
     printUsage
+    exit 1
 fi
 
 if [[ -z $OUTPUT ]]; then
