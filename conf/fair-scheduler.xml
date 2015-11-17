@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <allocations>
   <defaultSchedulingMode>fair</defaultSchedulingMode>
+  <queue name="limited">
+    <maxResources>4096 mb, 4 vcores</maxResources>
+  </queue>
   <queue name="fifo">
     <queue name="one">
       <schedulingMode>fifo</schedulingMode>
