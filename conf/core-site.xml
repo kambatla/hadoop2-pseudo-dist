@@ -23,6 +23,11 @@
   </property>
 
   <property>
+    <name>hadoop.security.token.service.use_ip</name>
+    <value>false</value>
+  </property>
+
+  <property>
     <name>hadoop.skip.worker.version.check</name>
     <value>true</value>
   </property>
