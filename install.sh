@@ -5,6 +5,9 @@ source ./configure.sh
 VERSION=$HADOOP_INSTALL_VERSION
 LOC=$HADOOP_ARCHIVE_LOCATION
 
+[[ -z $VERSION ]] && { echo "Version is empty" ; exit 1; }
+[[ -z $LOC ]] && { echo "Location is empty" ; exit 1; }
+
 # delete remnants from previous setup 
 rm -rf /tmp/pseudo-dist/hdfs/*
 rm -rf $VERSION*
