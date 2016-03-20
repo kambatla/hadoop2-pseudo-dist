@@ -40,6 +40,9 @@
     <value>org.apache.hadoop.yarn.util.ProcfsBasedProcessTree</value>
   </property>
   <property>
+    <name>yarn.nodemanager.overallocation.allocation-threshold</name>
+    <value>0.9f</value>
+  <property>
       <name>yarn.log-aggregation-enable</name>
       <value>true</value>
   </property>
