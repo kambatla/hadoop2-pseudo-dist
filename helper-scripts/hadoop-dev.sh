@@ -1,4 +1,6 @@
 #!/bin/bash
+set -xe
+
 source hadoop-dev-env.sh
 sbin/hadoop-daemon.sh $1 namenode
 sbin/hadoop-daemon.sh $1 datanode
