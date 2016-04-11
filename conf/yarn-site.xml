@@ -22,6 +22,10 @@
     <name>yarn.resourcemanager.scheduler.class</name>
     <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler</value>
   </property>
+  <property>
+    <name>yarn.scheduler.fair.assignmultiple</name>
+    <value>true</value>
+  </property>
 <!-- Node Manager Configs -->
   <property>
     <name>yarn.nodemanager.aux-services</name>
@@ -36,11 +40,15 @@
     <value>/tmp/pseudo-dist/yarn/log</value>
   </property>
   <property>
-    <name>yarn.nodemanager.container-monitor.process-tree.class</name>
-    <value>org.apache.hadoop.yarn.util.ProcfsBasedProcessTree</value>
-  </property>
-  <property>
       <name>yarn.log-aggregation-enable</name>
       <value>true</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.pmem-check-enabled</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.vmem-check-enabled</name>
+    <value>false</value>
   </property>
 </configuration>
