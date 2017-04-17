@@ -1,10 +1,13 @@
 #!/bin/bash
-set -xe
+set -e
+set -x 
 
 # Load the configuration
 source ./configure.sh
+
 VERSION=$HADOOP_INSTALL_VERSION
 LOC=$HADOOP_ARCHIVE_LOCATION
+set +x
 
 [[ -z $VERSION ]] && { echo "Version is empty" ; exit 1; }
 [[ -z $LOC ]] && { echo "Location is empty" ; exit 1; }
